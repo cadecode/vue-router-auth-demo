@@ -37,6 +37,9 @@ app.use(async (ctx, next) => {
     console.log(`${ctx.method} ${ctx.url} - ${ms}ms`)
 })
 
+// routes
+app.use(index.routes(), index.allowedMethods())
+
 // error-handling
 app.on('error', (err, ctx) => {
     console.error('server error', err, ctx)
