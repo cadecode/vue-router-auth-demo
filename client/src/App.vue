@@ -8,9 +8,9 @@
 
 <script>
 
-    import MyHeader from "@/components/MyHeader";
-    import PageBord from "@/components/PageBord";
-    import SideBar from "@/components/SideBar";
+    import MyHeader from './components/MyHeader'
+    import PageBord from './components/PageBord'
+    import SideBar from './components/SideBar'
 
     export default {
         name: 'App',

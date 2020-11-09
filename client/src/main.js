@@ -1,10 +1,13 @@
 import Vue from 'vue'
 import App from './App.vue'
-
+import store from './store'
 import '@/assets/css/common.css'
 
 Vue.config.productionTip = false
 
+store.dispatch('setUserRoutes').then()
+
 new Vue({
-  render: h => h(App),
+    store,
+    render: h => h(App),
 }).$mount('#app')
