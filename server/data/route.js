@@ -18,6 +18,7 @@ module.exports = [
         pid: 1,
         path: 'pwd_management',
         name: 'PwdManagement',
+        link: '/personal_center/pwd_management',
         title: '密码管理'
         
     },
@@ -26,6 +27,7 @@ module.exports = [
         pid: 1,
         path: 'my_info',
         name: 'MyInfo',
+        link: '/personal_center/my_info',
         title: '我的信息'
     },
     {
@@ -33,6 +35,7 @@ module.exports = [
         pid: 2,
         path: 'msg_notice',
         name: 'MsgNotice',
+        link: '/user_setting/msg_notice',
         title: '消息通知'
     },
     {
@@ -40,6 +43,7 @@ module.exports = [
         path: 2,
         pid: 'privacy_setting',
         name: 'PrivacySetting',
+        link: '/user_setting/privacy_setting',
         title: '隐私设置'
     }
 ]
