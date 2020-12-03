@@ -1,10 +1,25 @@
 <template>
-    <div class="side-bar">SideBar</div>
+    <div class="side-bar">
+        SideBar
+        <ul>
+            <li>
+                <router-link to="/">首页</router-link>
+            </li>
+        </ul>
+        <template v-for="(item, index) of $store.state.userRoutes">
+            <menu-item :key="index" :item=item />
+        </template>
+    </div>
 </template>
 
 <script>
+    import MenuItem from '@/components/MenuItem'
+
     export default {
-        name: "Sidebar"
+        name: "Sidebar",
+        components: {
+            MenuItem
+        }
     }
 </script>
 
